@@ -1,3 +1,3 @@
 # Donut Hub
 
-Donut Hub is the project made bt gaberuseff.
+Donut Hub is the project made by gaberuseff.
