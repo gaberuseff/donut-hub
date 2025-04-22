@@ -8,7 +8,7 @@ function Menu() {
 
   return (
     <ul
-      className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-12
+      className="mt-3 grid grid-cols-1 lg:grid-cols-2 gap-x-12
       px-2 divide-y divide-stone-200">
       {menu.map((donut) => (
         <MenuItem key={donut.id} donut={donut} />
