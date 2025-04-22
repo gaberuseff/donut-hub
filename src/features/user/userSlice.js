@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-import { getUserFromLocalStorage } from "../../services/userLocalStorage";
+import { getUserFromLocalStorage } from "../../utils/userLocalStorage";
 import { getAddress } from "../../services/apiGeocoding";
 
 

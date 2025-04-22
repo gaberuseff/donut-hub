@@ -52,3 +52,17 @@
 body {
   font-family: "Lora", "alexandria", sans-serif;
 }
+
+/* style scroll bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b6b6f;
+}

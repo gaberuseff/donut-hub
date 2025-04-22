@@ -36,7 +36,7 @@ function Order() {
     `https://www.google.com/maps/@${position.latitude},${position.longitude},57452m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D`;
 
   return (
-    <div className="py-6 px-4 sm:space-y-8 space-y-6 font-secondary text-gray-800">
+    <div className="pt-6 pb-14 px-4 sm:space-y-8 space-y-6 font-secondary text-gray-800">
       <div className="flex sm:flex-row flex-col justify-between sm:items-center">
         <h2 className="sm:text-2xl text-xl font-semibold  mb-2">Order #{id}</h2>
 
