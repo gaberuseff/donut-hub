@@ -35,19 +35,27 @@ function AppLayout() {
   }
 
   return (
-    <div className="grid h-screen grid-rows-[auto_1fr]">
-      {isLoading && <Loader />}
+    <>
+      <div className="grid h-screen grid-rows-[auto_1fr]">
+        {isLoading && <Loader />}
 
-      <Header />
+        <Header />
 
-      <div className="overflow-auto rtl">
-        <main className="max-w-5xl mx-auto">
-          <Outlet />
-        </main>
+        <div className="overflow-auto rtl">
+          <main className="max-w-5xl mx-auto">
+            <Outlet />
+          </main>
+        </div>
+
+        <CartOverview />
       </div>
 
-      <CartOverview />
-    </div>
+      <div className="absolute md:bottom-8 bottom-4 md:right-8 right-4">
+        <a href="https://www.facebook.com/gaberuseff/" target="_blank">
+          <ion-icon name="logo-facebook" size="large"></ion-icon>
+        </a>
+      </div>
+    </>
   );
 }
 

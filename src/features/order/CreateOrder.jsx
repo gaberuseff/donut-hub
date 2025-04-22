@@ -8,6 +8,7 @@ import store from "../../store";
 import Button from "../../ui/Button";
 import EmptyCart from "../cart/EmptyCart";
 import LinkButton from "../../ui/LinkButton";
+import {deleteUserFromLocalStorage} from "../../services/userLocalStorage";
 
 // https://uibakery.io/regex-library/phone-number
 const isValidPhone = (str) =>
@@ -184,6 +185,8 @@ export async function action({request}) {
 
   // Not over use
   store.dispatch(clearCart());
+
+  deleteUserFromLocalStorage();
 
   return redirect(`/order/${newOrder[0].id}`);
 }
