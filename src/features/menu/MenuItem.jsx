@@ -8,7 +8,7 @@ import UpdateItemQuantity from "../cart/UpdateItemQuantity";
 
 function MenuItem({donut}) {
   const dispatch = useDispatch();
-  const {id, name, unitPrice, ingredients, soldOut, imageUrl} = donut;
+  const {id, name, unitPrice, ingredients, soldOut, image} = donut;
   const currentQuantity = useSelector(getCurrentQuantityById(id));
   const isInCart = currentQuantity > 0;
 
@@ -29,7 +29,7 @@ function MenuItem({donut}) {
       className="font-secondary flex  gap-2 py-3 sm:py-6 
         sm:text-xl text-md tracking-wider text-secondary-900">
       <img
-        src={imageUrl}
+        src={image}
         alt={name}
         className={`w-28 h-28 sm:w-56 sm:h-36 ${
           soldOut ? " text-secondary-200" : ""
