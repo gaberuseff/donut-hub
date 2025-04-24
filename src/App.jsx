@@ -1,8 +1,5 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useLocation,
-} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {Analytics} from "@vercel/analytics/react";
 
 import Home from "./ui/Home";
 import Menu, {loader as menuLoader} from "./features/menu/Menu";
@@ -49,7 +46,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Analytics />
+      <RouterProvider router={router} />;
+    </>
+  );
 }
 
 export default App;
