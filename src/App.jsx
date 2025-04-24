@@ -1,5 +1,6 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Analytics} from "@vercel/analytics/react";
+import {SpeedInsights} from "@vercel/speed-insights/react";
 
 import Home from "./ui/Home";
 import Menu, {loader as menuLoader} from "./features/menu/Menu";
@@ -49,6 +50,7 @@ function App() {
   return (
     <>
       <Analytics />
+      <SpeedInsights />
       <RouterProvider router={router} />;
     </>
   );
