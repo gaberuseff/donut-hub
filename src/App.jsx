@@ -51,7 +51,7 @@ function App() {
     <>
       <Analytics />
       <SpeedInsights />
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </>
   );
 }

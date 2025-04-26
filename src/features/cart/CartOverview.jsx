@@ -13,7 +13,7 @@ function CartOverview() {
     <div
       className="bg-secondary-900 text-stone-100 px-4 py-5 
         sm:px-6 flex items-center justify-between 
-        sm:text-xl text-md uppercase absolute  top-0 left-0 w-full">
+        sm:text-xl text-md uppercase absolute md:static  top-0 left-0 md:bottom-0 w-full">
       <p className="space-x-3">
         <span>{totalCartQuantity} donuts</span>
         <span className="font-bold">{formatCurrency(totalCartPrice)}</span>

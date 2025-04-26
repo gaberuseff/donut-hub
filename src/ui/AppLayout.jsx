@@ -50,7 +50,7 @@ function AppLayout() {
         <CartOverview />
       </div>
 
-      <div className="absolute md:bottom-8 bottom-4 md:right-8 right-4">
+      <div className="absolute md:bottom-20 bottom-4 md:right-8 right-4">
         <a href="https://www.facebook.com/gaberuseff/" target="_blank">
           <ion-icon name="logo-facebook" size="large"></ion-icon>
         </a>
