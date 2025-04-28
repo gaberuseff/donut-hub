@@ -11,6 +11,7 @@ import CreateOrder, {
 } from "./features/order/CreateOrder";
 import AppLayout from "./ui/AppLayout";
 import Error from "./ui/Error";
+import Opentimes from "./ui/Opentimes";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         loader: orderLoader,
         errorElement: <Error />,
       },
+      {
+        path: '/opentimes',
+        element: <Opentimes />,
+      }
     ],
   },
 ]);

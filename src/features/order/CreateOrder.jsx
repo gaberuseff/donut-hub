@@ -3,12 +3,12 @@ import {createOrder, getStaticVariable} from "../../services/apiRestaurant";
 import {useDispatch, useSelector} from "react-redux";
 import {clearCart, getCart} from "../cart/cartSlice";
 import {fetchAddress} from "../user/userSlice";
+import {deleteUserFromLocalStorage} from "../../utils/userLocalStorage";
 import store from "../../store";
 
 import Button from "../../ui/Button";
 import EmptyCart from "../cart/EmptyCart";
 import LinkButton from "../../ui/LinkButton";
-import {deleteUserFromLocalStorage} from "../../utils/userLocalStorage";
 
 // https://uibakery.io/regex-library/phone-number
 const isValidPhone = (str) =>

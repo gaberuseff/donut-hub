@@ -6,7 +6,7 @@ import {addItem, getCurrentQuantityById} from "../cart/cartSlice";
 import Button from "../../ui/Button";
 import UpdateItemQuantity from "../cart/UpdateItemQuantity";
 
-function MenuItem({donut}) {
+function MenuItem({donut, isOpen}) {
   const dispatch = useDispatch();
   const {id, name, unitPrice, ingredients, soldOut, image} = donut;
   const currentQuantity = useSelector(getCurrentQuantityById(id));
@@ -56,7 +56,7 @@ function MenuItem({donut}) {
             </div>
           )}
 
-          {!soldOut && !isInCart && (
+          {!soldOut && !isInCart && isOpen && (
             <Button type="small" onClick={handelAddToCart}>
               Add to cart
             </Button>

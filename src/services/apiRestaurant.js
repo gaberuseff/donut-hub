@@ -47,7 +47,7 @@ export async function createOrder(order) {
 export async function getStaticVariable() {
     let { data, error } = await supabase
         .from('staticVar')
-        .select('deliveryPrice')
+        .select('deliveryPrice, isOpen')
 
 
     if (error) {
